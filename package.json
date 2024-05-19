@@ -15,7 +15,8 @@
   "scripts": {
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "npm run build-fast -- --dts-resolve",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "prepublishOnly": "npm run lint && npm run build"
   },
   "author": "Egor Rudinsky <egor@egor.win>",
   "license": "ISC",
