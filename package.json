@@ -1,7 +1,21 @@
 {
   "name": "pocket-camera-save-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parser for Pocket Camera & GameBoy Camera save file",
+  "keywords": [
+    "gameboy",
+    "gameboycamera",
+    "pocketcamera",
+    "funtography",
+    "mgb-006",
+    "gb",
+    "game boy",
+    "gameboy camera",
+    "game boy camera",
+    "pocket camera",
+    "parse",
+    "parser"
+  ],
   "files": [
     "dist"
   ],

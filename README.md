@@ -1,5 +1,5 @@
 # pocket-camera-save-parser
-> Simple parser for GameBoy/Pocket Camera written in typescript 
+> Simple parser for GameBoy/Pocket Camera written in typescript
 
 ## Installation
 
@@ -13,6 +13,7 @@ $ npm install --save pocket-camera-save-parser
 - [x] Get game face image
 - [ ] Better parser for save meta information(JP&INT)
 - [ ] Write documentation for this lib
+- [ ] Parse to some image format instead of array of pixels
 
 ## Usage
 
