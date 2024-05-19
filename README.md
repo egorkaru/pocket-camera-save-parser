@@ -4,7 +4,7 @@
 ## Installation
 
 ```bash
-$ npm install --pocket-camera-save-parser
+$ npm install --save pocket-camera-save-parser
 ```
 
 ### TODO
