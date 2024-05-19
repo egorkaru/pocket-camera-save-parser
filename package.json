@@ -1,0 +1,41 @@
+{
+  "name": "pocket-camera-save-parser",
+  "version": "0.0.1",
+  "description": "Parser for Pocket Camera & GameBoy Camera save file",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build-fast": "tsup src/index.ts --format cjs,esm",
+    "build": "npm run build-fast -- --dts-resolve",
+    "lint": "eslint src"
+  },
+  "author": "Egor Rudinsky <egor@egor.win>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/egorkaru/pocket-camera-save-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/egorkaru/pocket-camera-save-parser/issues"
+  },
+  "homepage": "https://github.com/egorkaru/pocket-camera-save-parser#readme",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^8.57.0",
+    "globals": "^15.2.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
+  }
+}
