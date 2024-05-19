@@ -29,14 +29,14 @@ const SAVE_FILE_PATH = path.resolve(__dirname, './input/test.sav'); // Path to y
 
 type TPallette = [string, string, string, string];
 
-const TEST_ASCII_PALLETTE: TPallette = [
+const ASCII_PALLETTE: TPallette = [
   ' ',
   '.',
   ':',
   '+',
 ];
 
-const getPixelColor = (pixel: GBPixel) => TEST_ASCII_PALLETTE[pixel];
+const renderPixel = (pixel: GBPixel) => ASCII_PALLETTE[pixel];
 
 const loadSaveFileAsBlob = async(path: string) => {
   const data = await readFile(path);
@@ -55,7 +55,7 @@ const printImagesFromGBSaveInCli = async () => {
       console.log(`---[IMAGE_ALBUM_INDEX:${photoIndex}]-[MEMORY_SLOT:${String(slotIndex).padStart(2, '0')}]${'-'.repeat(87)}`);
 
       image.pixels.forEach((line) => {
-        console.log(line.map(getPixelColor).join(''));
+        console.log(line.map(renderPixel).join(''));
       })
     })
 }
@@ -64,3 +64,7 @@ printImagesFromGBSaveInCli();
 
 
 ```
+
+# Aknowledgments
+
+- [Raphaël BOICHOT](https://github.com/Raphael-Boichot/Inject-pictures-in-your-Game-Boy-Camera-saves) for writing excellent research paper about camera save format.
